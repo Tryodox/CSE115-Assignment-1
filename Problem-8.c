@@ -1,9 +1,8 @@
-//Problem 8
 #include <stdio.h>
 
 
 int collatz(int n){
-    int count=0;
+    int count=1;
     if(n<=0){
         printf("Undefined");
     }
@@ -20,6 +19,7 @@ int collatz(int n){
 
 int main() {
     int n,result;
+    printf("Enter a Number: ");
     scanf("%d",&n);
     result=collatz(n);
     printf("%d",result);
